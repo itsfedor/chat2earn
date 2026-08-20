@@ -8,6 +8,10 @@ Pays players server money for chatting in English. Every message gets scored
 by an AI model (Groq, `llama-3.1-8b-instant`), and the payout scales with
 how good the English is.
 
+<p align="center">
+  <img src="assets/preview.jpg" alt="Chat2Earn" width="80%" />
+</p>
+
 ## Why this plugin exists
 
 On a language-learning server the chat is the lesson. Money is the
