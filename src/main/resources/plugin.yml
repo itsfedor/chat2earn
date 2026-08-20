@@ -1,0 +1,7 @@
+name: Chat2Earn
+version: '1.0.0'
+main: com.nous.chat2earn.Chat2Earn
+api-version: '1.21'
+depend: [Vault]
+authors: [Nous]
+description: Rewards players for chatting in English using AI evaluation

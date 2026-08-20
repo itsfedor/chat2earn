@@ -1,0 +1,43 @@
+# Groq API settings
+groq:
+  api-key: "YOUR_GROQ_API_KEY"
+  model: "llama-3.1-8b-instant"
+  timeout-seconds: 10
+
+# Scoring
+scoring:
+  points-per-message-max: 4
+  dollars-per-point: 0.10
+  milestone-dollars: 5.0
+
+# Filters
+filters:
+  min-words: 3
+  max-cyrillic-percent: 49
+
+# Messages (Russian + English mix, 20 variants with color codes)
+# &0 black  &1 dark_blue  &2 dark_green  &3 dark_aqua  &4 dark_red
+# &5 dark_purple  &6 gold  &7 gray  &8 dark_gray  &9 blue
+# &a green  &b aqua  &c red  &d light_purple  &e yellow  &f white
+# &l bold  &o italic  &n underline  &m strikethrough  &r reset
+motivation:
+  - "&6🔥 &e+&a$%.2f &eза английский! &dТвой баланс растёт &6✨"
+  - "&b💰 &f+&a$%.2f &b→ кошелёк! &eEnglish &aпрокачивается &eс каждым словом"
+  - "&d🎉 &fNice job! &a+$%.2f &f— продолжай в том же духе &d🚀"
+  - "&5💎 &dЕщё &a+$%.2f &dза English skills! &5Ты крут!"
+  - "&e🚀 &a+$%.2f &6earned! &eАнглийский &c🔥 &e→ кошелёк &a📈"
+  - "&6⭐ &eПоздравляю! &a+$%.2f &e— &dKeep grinding! &6💪"
+  - "&a💪 &f+&a$%.2f&f! &bVocabulary &fрастёт, &eбаланс &fтоже &a📊"
+  - "&b🌟 &a+$%.2f &bв копилку! &dEnglish &5is your superpower &b⚡"
+  - "&e🎯 &fТы набрал &a+$%.2f &fза чат! &6Well played &e👏"
+  - "&c🏆 &fЕщё один milestone: &a+$%.2f&f! &dFluent &fближе &c🎯"
+  - "&a💸 &eCha-ching! &a+$%.2f &eза старания в English &a🤑"
+  - "&5🔝 &d+&a$%.2f&d! &fТы звучишь как &enative speaker &5🎙️"
+  - "&b✨ &a+$%.2f &badded! &fPractice makes perfect &d— &fand pays &a💰"
+  - "&c🌈 &a+$%.2f &cricher &fand wiser! &eТвой English сияет &6☀️"
+  - "&d🎪 &fШоу продолжается! &a+$%.2f &fза отличный English &d🎭"
+  - "&6🦸 &a+$%.2f &6earned! &eТы — English superhero &fсервера &6⚡"
+  - "&5💫 &dМагия английского &a+$%.2f&d! &fKeep casting spells &5🪄"
+  - "&e🎵 &a+$%.2f &eв ритме English! &cYou're on fire &e🔥"
+  - "&a🌻 &eЕщё &a+$%.2f &eна English-поле! &fKeep watering &a💧"
+  - "&c👑 &a+$%.2f &cдля &6короля/королевы &cанглийского чата! &eRespect &c🎖️"

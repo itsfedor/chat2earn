@@ -1,0 +1,10 @@
+{
+  "slug": "chat2earn",
+  "title": "Chat2Earn",
+  "summary": "Money for speaking English: AI-scored chat rewards paid out through Vault.",
+  "categories": ["economy", "social", "utility"],
+  "license_id": "MIT",
+  "client_side": "unsupported",
+  "server_side": "required",
+  "body_file": "scripts/modrinth/bodies/chat2earn.md"
+}
