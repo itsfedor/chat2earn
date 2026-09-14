@@ -35,21 +35,22 @@ a moment later.
 ## Requirements
 
 - Paper or Spigot 1.21+
-- Vault with an economy plugin
-- A Groq API key from https://console.groq.com
+- [Vault](https://www.spigotmc.org/resources/vault.34315/) + an economy plugin (e.g. [EssentialsX](https://essentialsx.net/downloads.html))
+- A Groq API key from https://console.groq.com (free tier works)
 
 ## Install
 
-1. Put `Chat2Earn.jar` in `plugins/`.
-2. Copy `config.example.yml` to `config.yml` in the same folder.
-3. Put your Groq key in `config.yml`.
-4. Restart the server.
+1. Download `Chat2Earn.jar` from [Releases](https://github.com/itsfedor/chat2earn/releases/latest) (or use the copy in the repo root).
+2. Put the jar in `plugins/`.
+3. Copy `config.example.yml` to `config.yml` in the same folder.
+4. Put your Groq key in `config.yml`.
+5. Restart the server.
 
 ## Configuration
 
 ```yaml
 groq:
-  api-key: "YOUR_GROQ_API_KEY"
+  api-key: "YOUR_...KEY"
   model: "llama-3.1-8b-instant"
   timeout-seconds: 10
 
@@ -72,6 +73,12 @@ Tuning notes:
 - If scores feel off, swap the model for a stronger one. The instant model
   is cheap and fast, which matters when the whole chat is being scored.
 
+## Troubleshooting
+
+- **Nobody gets paid** — check the console for Vault errors: an economy plugin must be installed and registered (Vault alone is not enough).
+- **Invalid API key in the log** — the Groq key in `config.yml` must be the full key from console.groq.com; the placeholder `YOUR_...KEY` pays nothing and logs warnings.
+- **Messages in English still pay $0** — that's the filter working: fewer than 3 words, or more than 49% Cyrillic, pays nothing by design.
+
 ## Pair it with
 
 [EnglishProgression](https://github.com/itsfedor/englishprogression), which
@@ -83,6 +90,8 @@ thresholds. The two were designed as a pair.
 ```bash
 ./gradlew build
 ```
+
+Requires JDK 21. Produces `build/libs/Chat2Earn.jar`.
 
 The jar in this repo is the exact build running on the ESL English Server.
 
