@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+  <img alt="Chat2Earn — Minecraft plugin: AI-scored English chat that pays — by Fedor Molodtsov" src="assets/banner-light.png" width="100%">
+</picture>
+
 # Chat2Earn
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
