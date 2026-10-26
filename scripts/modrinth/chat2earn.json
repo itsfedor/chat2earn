@@ -3,7 +3,7 @@
   "title": "Chat2Earn",
   "summary": "Money for speaking English: AI-scored chat rewards paid out through Vault.",
   "categories": ["economy", "social", "utility"],
-  "license_id": "MIT",
+  "license_id": "AGPL-3.0",
   "client_side": "unsupported",
   "server_side": "required",
   "body_file": "scripts/modrinth/bodies/chat2earn.md"
