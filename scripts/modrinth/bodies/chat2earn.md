@@ -57,4 +57,4 @@ thresholds. The two were designed as a pair.
 
 ## License
 
-AGPL-3.0. Source code is in the [repository](https://github.com/itsfedor/chat2earn).
+MIT. Source code is in the [repository](https://github.com/itsfedor/chat2earn).
